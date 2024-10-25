@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamorous Galas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation styling */
+        .navbar {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 60px; /* Adjust size as needed */
+        }
+
+        .nav-link {
+            color: rgb(255, 0, 123) !important;
+            font-weight: 500;
+            margin-right: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #b51364 !important;
+        }
+
+        /* Home section */
+        #home {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        #home .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(174, 172, 172, 0.5); /* Pink with 70% opacity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+       /* Import the Ananda Black font */
+@font-face {
+    font-family: 'Ananda Black';
+    src: url('fonts/AnandaBlackPersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Glamorous Galas">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#book-now">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="overlay">
+            <h1>Plan.Dream.Celebrate</h1>
+        </div>
+    </section>
+
+    <!-- Placeholder Sections -->
+    <section id="events" class="py-5">
+        <div class="container text-center">
+            <h2>Events</h2>
+            <p>Details about various events we can organize.</p>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Services</h2>
+            <p>Explore our exclusive services to make your event shine.</p>
+        </div>
+    </section>
+
+    <section id="book-now" class="py-5">
+        <div class="container text-center">
+            <h2>Book Now</h2>
+            <p>Reserve your date for an unforgettable experience.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
