@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Themes</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="text-center py-4 bg-white">
+    <h1 class="cursive-text">Our Event Options</h1>
+    <p class="font-bold text-black">Select Your Perfect Event – Let’s Bring Your Vision to Life.</p>
+  </header>
+
+  <main>
+    <!-- Event Type Section -->
+    <section class="container py-5" id="event-types">
+      <div class="row text-center">
+       
+        <!-- Weddings -->
+        <div class="col-md-4">
+          <div class="card shadow" onclick="scrollToSection('wedding-themes')">
+            <img src="images/aaaa.jpg" class="card-img-top" alt="Weddings">
+            <div class="card-body">
+              <h3>Weddings</h3>
+              <p>Celebrate your love story with a wedding tailored to your dreams.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Birthdays -->
+        <div class="col-md-4">
+          <div class="card shadow" onclick="scrollToSection('birthday-themes')">
+            <img src="images/dd.jpg" class="card-img-top" alt="Birthdays">
+            <div class="card-body">
+              <h3>Birthdays</h3>
+              <p>Make every birthday unforgettable with a celebration that reflects your style.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Christenings -->
+        <div class="col-md-4">
+          <div class="card shadow" onclick="scrollToSection('christening-themes')">
+            <img src="images/cccc.jpg" class="card-img-top" alt="Christenings">
+            <div class="card-body">
+              <h3>Christenings</h3>
+              <p>Mark this special occasion with a christening celebration filled with love and meaning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Wedding Themes -->
+     <section id="wedding-themes" class="theme-section bg-wedding">
+      <div class="container py-5">
+        <h2 class="text-center text-pink cursive-text">Wedding Themes</h2>
+        <p class="text-center font-bold text-black">Your Dream Wedding Awaits – Choose to Begin the Magic!</p>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="images/wedding11.jpg" class="img-fluid rounded mb-3" alt="Wedding Theme 1">
+            <p>Floral Bliss Affair</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/wedding22.jpg" class="img-fluid rounded mb-3" alt="Wedding Theme 2">
+            <p>Filipiniana Elegance</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/wedding33.jpg" class="img-fluid rounded mb-3" alt="Wedding Theme 3">
+            <p>Modern Love Story</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Birthday Themes Section -->
+    <section id="birthday-themes" class="container py-5 bg-birthday">
+      <h2 class="text-center">Birthday Themes</h2>
+      <p class="text-center">Your Celebration, Your Style – Let’s Pick the Perfect Theme!</p>
+      <div id="birthday-gallery" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-4 mx-2 text-center">
+                <img src="images/birthday11.jpg" class="img-fluid rounded mb-3" alt="Birthday 1">
+                <p>Boho Chic Bash</p>
+              </div>
+              <div class="col-md-4 mx-2 text-center">
+                <img src="images/birthday22.jpg" class="img-fluid rounded mb-3" alt="Birthday 2">
+                <p>Simply Sophisticated Soiree</p>
+              </div>
+              <div class="col-md-4 mx-2 text-center">
+                <img src="images/birthday33.jpg" class="img-fluid rounded mb-3" alt="Birthday 3">
+                <p>Secret Garden Soiree</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-4 mx-2 text-center">
+                <img src="images/birthday44.jpg" class="img-fluid rounded mb-3" alt="Birthday 4">
+                <p>Fairytale Fantasy</p>
+              </div>
+              <div class="col-md-4 mx-2 text-center">
+                <img src="images/birthday55.jpg" class="img-fluid rounded mb-3" alt="Birthday 5">
+                <p>Glamour Glitz Gala</p>
+              </div>
+              <div class="col-md-4 mx-2 text-center">
+                <img src="images/birthday66.jpg" class="img-fluid rounded mb-3" alt="Birthday 6">
+                <p>Crimson & Noir Extravaganza</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#birthday-gallery" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#birthday-gallery" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+     <!-- Christening Themes -->
+     <section id="christening-themes" class="theme-section bg-christening">
+      <div class="container py-5">
+        <h2 class="text-center text-pink cursive-text">Christening Themes</h2>
+        <p class="text-center font-bold text-black">Celebrate Your Little Blessing with a Perfectly Designed Christening!</p>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <img src="images/christening11.jpg" class="img-fluid rounded mb-3" alt="Christening Theme 1">
+            <p>A Garden of Grace</p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/christening22.jpg" class="img-fluid rounded mb-3" alt="Christening Theme 2">
+            <p>Blue Skies & Blessings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  
+
